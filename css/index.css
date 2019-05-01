@@ -143,6 +143,22 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.button {
+  margin: 25px auto;
+  height: 35px;
+  width: 125px;
+  background: none;
+  border: solid green 1px;
+  font-size: 1.25rem;
+  color: green;
+  box-shadow: 0px 0px 10px;
+}
+@media (max-width: 500px) {
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
 nav {
   width: 40%;
   margin: 15px 0px 15px auto;
@@ -299,4 +315,32 @@ footer {
 footer p {
   color: #999999;
   padding: 25px;
+}
+.modal {
+  position: absolute;
+  z-index: 1000;
+  background-color: lightGrey;
+}
+#share-options form {
+  text-align: center;
+}
+#share-options form p {
+  margin: 15px auto;
+}
+#share-options button {
+  margin: 25px auto;
+  height: 35px;
+  width: 125px;
+  background: none;
+  border: solid green 1px;
+  font-size: 1.25rem;
+  color: green;
+  box-shadow: 0px 0px 10px;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  #share-options button {
+    width: 100%;
+    text-align: center;
+  }
 }
