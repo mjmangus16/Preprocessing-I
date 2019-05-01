@@ -139,15 +139,24 @@ body {
   width: 90%;
   margin: auto;
 }
-nav {
+.flexSpaceAround {
   display: flex;
+  justify-content: space-between;
+}
+nav {
   width: 40%;
   margin: 15px 0px 15px auto;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
 }
 nav a {
   text-decoration: none;
   color: black;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+  }
 }
 .top-content {
   background-color: #333333;
@@ -169,7 +178,7 @@ nav a {
 }
 .top-content div {
   width: calc(100% - 100px);
-  margin: 50px auto;
+  margin: 25px auto 50px;
   border-top: solid green 1px;
 }
 .top-content div p {
@@ -187,18 +196,40 @@ nav a {
   border: solid green 1px;
   font-size: 1.25rem;
   color: green;
-  box-shadow: 2px 3px 10px;
+  box-shadow: 0px 0px 10px;
+}
+@media (max-width: 500px) {
+  .top-content div button {
+    width: 100%;
+    text-align: center;
+  }
 }
 .middle-content {
   display: flex;
   justify-content: space-between;
   margin: 50px auto;
 }
+@media (max-width: 500px) {
+  .middle-content {
+    flex-direction: column;
+  }
+}
 .middle-content section:first-child {
   width: 55%;
 }
+@media (max-width: 500px) {
+  .middle-content section:first-child {
+    width: 100%;
+  }
+}
 .middle-content section:last-child {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .middle-content section:last-child {
+    width: 100%;
+    margin-top: 50px;
+  }
 }
 .middle-content p {
   padding-top: 15px;
@@ -220,6 +251,52 @@ nav a {
 .middle-content li:last-child {
   border-bottom: solid green 1px;
 }
+.bottom-content {
+  width: 50%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    width: 100%;
+  }
+}
 .bottom-content h4 {
   font-size: 1.5rem;
+}
+.bottom-content table {
+  width: 100%;
+  margin: 25px 0px;
+  text-align: center;
+}
+.bottom-content tr {
+  border-top: solid green 1px;
+  border-left: solid green 1px;
+  border-right: solid green 1px;
+  padding: 15px;
+}
+.bottom-content tr th {
+  border-bottom: solid green 1px;
+  font-size: 1.25rem;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+.bottom-content tr th:first-child,
+.bottom-content tr td:first-child {
+  border-right: solid green 1px;
+  width: 15%;
+}
+.bottom-content tr p {
+  padding: 10px 0px;
+  font-size: 1rem;
+}
+.bottom-content tr:last-child {
+  border-bottom: solid green 1px;
+}
+footer {
+  background-color: #333333;
+  text-align: center;
+}
+footer p {
+  color: #999999;
+  padding: 25px;
 }
