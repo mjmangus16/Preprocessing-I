@@ -159,7 +159,7 @@ nav a {
   margin: 50px auto 10px 50px;
 }
 .top-content h1 {
-  font-size: 3em;
+  font-size: 3rem;
   color: #999999;
   padding: 10px 50px;
 }
@@ -173,5 +173,53 @@ nav a {
   border-top: solid green 1px;
 }
 .top-content div p {
-  padding: 25px 0px;
+  padding: 25px 0px 50px;
+}
+.top-content div h4 {
+  font-size: 1.5rem;
+  color: #999999;
+}
+.top-content div button {
+  margin: 25px auto;
+  height: 35px;
+  width: 125px;
+  background: none;
+  border: solid green 1px;
+  font-size: 1.25rem;
+  color: green;
+  box-shadow: 2px 3px 10px;
+}
+.middle-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.middle-content section:first-child {
+  width: 55%;
+}
+.middle-content section:last-child {
+  width: 40%;
+}
+.middle-content p {
+  padding-top: 15px;
+  line-height: 1.75rem;
+}
+.middle-content h3 {
+  font-size: 2rem;
+}
+.middle-content h4 {
+  font-size: 1.5rem;
+}
+.middle-content ul {
+  margin: 25px auto;
+}
+.middle-content li {
+  border-top: solid green 1px;
+  padding: 10px;
+}
+.middle-content li:last-child {
+  border-bottom: solid green 1px;
+}
+.bottom-content h4 {
+  font-size: 1.5rem;
 }
